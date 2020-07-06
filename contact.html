@@ -1,0 +1,333 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Real Estate Home 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body onload="createCaptcha()">
+	
+	
+	<!-- NAVBAR -->
+	
+	<nav class="navbar navbar-expand-lg fixed-top py-4">
+        <div class="container-fluid">
+		
+			<a href="index.html" class="navbar-brand text-uppercase font-weight-bold">LOGO</a>
+			
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+            
+            <div id="navbarSupportedContent" class="collapse navbar-collapse ">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link font-weight-bold">Home</a></li>
+                    <li class="nav-item"><a href="properties.html" class="nav-link font-weight-bold ">Properties</a></li>
+                    <li class="nav-item"><a href="faq.html" class="nav-link font-weight-bold">FAQ</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link font-weight-bold">Blog</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link font-weight-bold active-link">Contact<span class="line"></span></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link font-weight-bold" data-toggle="modal" data-target="#myModal">Login / Register</a></li>
+                </ul>
+				<div class="submit">
+					<ul class="navbar-nav">
+						<li class="nav-item"><a href="#" class="nav-link submit-btn font-weight-bold">Submit property <i class="fa fa-plus-square-o"></i></a></li>
+					</ul>
+				</div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- LOGIN / REGISTER -->
+    
+    <section id="login-register">
+        <div class="container">
+            <div class="row">
+                
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                    ×</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-lg-8 col-md-12 col-sm-12 body-modal">
+                                        <!-- Nav tabs -->
+                                        <ul class="nav nav-tabs">
+                                            <li><a href="#Login" data-toggle="tab" class="login active-log">Login</a></li>
+                                            <li><a href="#Registration" data-toggle="tab" class="register">Registration</a></li>
+                                        </ul>
+                                        <!-- Tab panes -->
+                                        <div class="tab-content">
+                                            <div class="tab-pane active" id="Login">
+                                                <form role="form" class="form-horizontal">
+                                                <div class="form-group">
+                                                    <div class="col-sm-10">
+                                                        <input type="email" class="form-control form-log-reg" id="email1" placeholder="Email" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-sm-10">
+                                                        <input type="password" class="form-control form-log-reg" id="exampleInputPassword1" placeholder="Password" />
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <button type="submit" class="btn btn-submit-log">
+                                                            Submit</button>
+                                                        <div class="forget-pass">
+                                                            <a href="#">Forgot your password?</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </form>
+                                            </div>
+                                            <div class="tab-pane" id="Registration">
+                                                <form role="form" class="form-horizontal">
+                                                <div class="form-group">
+                                                    <div class="col-sm-12">
+                                                        <div class="row">
+                                                            <div class="col-md-10 col-sm-10">
+                                                                <input type="text" class="form-control form-log-reg" placeholder="Name" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-sm-10">
+                                                        <input type="email" class="form-control form-log-reg" id="email" placeholder="Email" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-sm-10">
+                                                        <input type="email" class="form-control form-log-reg" id="mobile" placeholder="Mobile" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-sm-10">
+                                                        <input type="password" class="form-control form-log-reg" id="password" placeholder="Password" />
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-10">
+                                                        <button type="button" class="btn btn-save-reg">
+                                                            Save & Continue</button>
+                                                        <button type="button" class="btn btn-cancel-reg">
+                                                            Cancel</button>
+                                                    </div>
+                                                </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-12 col-sm-12">
+                                        <div class="row text-center sign-with">
+                                            <div class="col-md-12">
+                                                <h3>Sign in with</h3>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="btn-group btn-group-justified">
+                                                    <a href="#" class="btn btn-primary">Facebook</a> <a href="#" class="btn btn-danger">
+                                                        Google</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+        
+    <!-- SUB-PAGE -->
+    
+    <section id="sub-pages">
+        <div class="bg-sub-pages">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="text-sub-pages">
+                            <h1>Write To Us</h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="text-sub-pages">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><i class="fa fa-caret-right"></i></li>
+                                <li><a href="contact.html" class="active-sublink">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </section>
+    
+    <!-- CONTACT PAGE -->
+    
+    <section id="contact-page">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lf-12 col-md-12 col-sm-12 padd-cont">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190255.33858260693!2d-87.87204681033981!3d41.83390366656982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20IL%2C%20USA!5e0!3m2!1sen!2srs!4v1593767454918!5m2!1sen!2srs" class="map-cont" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CONT FORM -->
+    
+    <section id="cont-form">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-5 col-md-5 col-sm-12 padd-cont-form">
+                    <div class="data-cont">
+                        <h5>Contact Informations</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla id ante nec iaculis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla id ante nec iaculis.</p>
+                        <ul>
+                            <li><img src="images/location.png" alt="location"/> Chicago street lorem ipsum - 111225, street ipsum</li>
+                            <li><img src="images/mail.png" alt="location"/> <a href="">info@realestate.com</a></li>
+                            <li><img src="images/phone.png" alt="location"/> <a href="">061/412-458</a></li>
+                            <li><img src="images/fax.png" alt="location"/> <a href="">123/456-789</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-7 col-md-7 col-sm-12 padd-cont-form">
+                    <div class="form-cont-page">
+                        <form> 
+                          <div class="form-row">
+
+                            <div class="form-group col-md-6">
+                              <input type="text" class="form-control firstName form-fields-cont" placeholder="First Name">
+                            </div>
+
+                            <div class="form-group col-md-6">
+                              <input type="text" class="form-control lastName form-fields-cont" placeholder="Last Name">
+                            </div>
+
+                            <div class="form-group col-md-12">
+                                  <input type="email" class="form-control email form-fields-cont" placeholder="Email">
+                            </div>
+
+                              <div class="form-group col-md-12">
+                                  <input type="text" class="form-control number form-fields-cont" placeholder="Number">
+                            </div>
+
+                              <div class="form-group col-md-12">
+                                    <textarea name="message" class="form-control form-fields-cont" style="min-height: 100px;" placeholder="Message"></textarea>
+                            </div>
+
+                          </div>
+
+                            <div onsubmit="validateCaptcha()">
+                                <div id="captcha"></div>
+                                <input type="text" placeholder="Captcha" id="cpatchaTextBox" class="form-control col-md-4 form-fields-cont"/>
+                                <button type="submit" class="btn-captcha-cont">SUBMIT</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="text-footer">
+                        <h5>Info Site</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla id ante nec iaculis.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="text-footer">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Terms & Conditions</a></li>
+                            <li><a href="">Support</a></li>
+                            <li><a href="">Blog Info</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="text-footer">
+                        <h5>Contact Us</h5>
+                        <ul>
+                            <li>Street Building, Chicago</li>
+                            <li>125896 CH</li>
+                            <li><a href="">info@realestate.com</a></li>
+                            <li><a href="">+123/456-789</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="text-footer">
+                        <h5>Follow Us</h5>
+                        <div class="footer-soc">
+                            <ul>
+                                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fa fa-pinterest-p"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-soc">
+                            <ul>
+                                <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href=""><i class="fa fa-google"></i></a></li>
+                                <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="copy">
+                        <p>© 2020 Real Estate. All rights reserved.</p>
+                        <p>Made by: <a href="">Darko N.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+	<!-- jQuery -->
+	
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="vendor/wow/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jscript.js"></script>
+
+
+
+</body>
+</html>

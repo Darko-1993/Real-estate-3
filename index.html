@@ -26,20 +26,18 @@
 	<nav class="navbar navbar-expand-lg fixed-top py-4">
         <div class="container-fluid">
 		
-			<a href="#" class="navbar-brand text-uppercase font-weight-bold">LOGO</a>
+			<a href="index.html" class="navbar-brand text-uppercase font-weight-bold">LOGO</a>
 			
             <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
             
             <div id="navbarSupportedContent" class="collapse navbar-collapse ">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="#" class="nav-link font-weight-bold active-link">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link font-weight-bold">Properties</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link font-weight-bold">Members</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link font-weight-bold">Blog</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link font-weight-bold">Contact<span class="line"></span></a></li>
-                    <li class="nav-item"><a href="#" class="nav-link font-weight-bold">Login</a></li>
-                    <li class="nav-item"><p class="slash font-weight-bold">/</p></li>
-                    <li class="nav-item"><a href="#" class="nav-link font-weight-bold">Register</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link font-weight-bold active-link">Home</a></li>
+                    <li class="nav-item"><a href="properties.html" class="nav-link font-weight-bold">Properties</a></li>
+                    <li class="nav-item"><a href="faq.html" class="nav-link font-weight-bold">FAQ</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link font-weight-bold">Blog</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link font-weight-bold">Contact<span class="line"></span></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link font-weight-bold" data-toggle="modal" data-target="#myModal">Login / Register</a></li>
                 </ul>
 				<div class="submit">
 					<ul class="navbar-nav">
@@ -49,6 +47,114 @@
             </div>
         </div>
     </nav>
+    
+    <!-- LOGIN / REGISTER -->
+    
+    <section id="login-register">
+        <div class="container">
+            <div class="row">
+                
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                    ×</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-lg-8 col-md-12 col-sm-12 body-modal">
+                                        <!-- Nav tabs -->
+                                        <ul class="nav nav-tabs">
+                                            <li><a href="#Login" data-toggle="tab" class="login active-log">Login</a></li>
+                                            <li><a href="#Registration" data-toggle="tab" class="register">Registration</a></li>
+                                        </ul>
+                                        <!-- Tab panes -->
+                                        <div class="tab-content">
+                                            <div class="tab-pane active" id="Login">
+                                                <form role="form" class="form-horizontal">
+                                                <div class="form-group">
+                                                    <div class="col-sm-10">
+                                                        <input type="email" class="form-control form-log-reg" id="email1" placeholder="Email" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-sm-10">
+                                                        <input type="password" class="form-control form-log-reg" id="exampleInputPassword1" placeholder="Password" />
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <button type="submit" class="btn btn-submit-log">
+                                                            Submit</button>
+                                                        <div class="forget-pass">
+                                                            <a href="#">Forgot your password?</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </form>
+                                            </div>
+                                            <div class="tab-pane" id="Registration">
+                                                <form role="form" class="form-horizontal">
+                                                <div class="form-group">
+                                                    <div class="col-sm-12">
+                                                        <div class="row">
+                                                            <div class="col-md-10 col-sm-10">
+                                                                <input type="text" class="form-control form-log-reg" placeholder="Name" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-sm-10">
+                                                        <input type="email" class="form-control form-log-reg" id="email" placeholder="Email" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-sm-10">
+                                                        <input type="email" class="form-control form-log-reg" id="mobile" placeholder="Mobile" />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-sm-10">
+                                                        <input type="password" class="form-control form-log-reg" id="password" placeholder="Password" />
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-10">
+                                                        <button type="button" class="btn btn-save-reg">
+                                                            Save & Continue</button>
+                                                        <button type="button" class="btn btn-cancel-reg">
+                                                            Cancel</button>
+                                                    </div>
+                                                </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-12 col-sm-12">
+                                        <div class="row text-center sign-with">
+                                            <div class="col-md-12">
+                                                <h3>Sign in with</h3>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="btn-group btn-group-justified">
+                                                    <a href="#" class="btn btn-primary">Facebook</a> <a href="#" class="btn btn-danger">
+                                                        Google</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
         
     <!-- HERO -->
     
@@ -93,7 +199,7 @@
                               <div class="form-group col-lg-2 col-md-4 col-sm-6 form-group-simple">
                                   <select name="work" class="form-control form-simple select-quote-option">
                                       <option selected="" disabled="" hidden="">Location</option>
-                                      <option value="1">Alabama</option>
+                                      <option value="1">Montgomery</option>
                                       <option value="2">New York</option>
                                       <option value="3">Chicago</option>
                                       <option value="4">Los Angeles</option>
@@ -115,32 +221,32 @@
                         <div class="row property-choose">
                             <div class="col-lg-2 col-md-4 col-sm-6">
                                 <div class="choose-property">
-                                    <a href="">Apartment</a>
+                                    <a href="apartments.html">Apartment</a>
                                 </div>
                             </div>
                             <div class="col-lg-2 col-md-4 col-sm-6">
                                 <div class="choose-property">
-                                    <a href="">Villa</a>
+                                    <a href="apartments.html">Villa</a>
                                 </div>
                             </div>
                             <div class="col-lg-2 col-md-4 col-sm-6">
                                 <div class="choose-property">
-                                    <a href="">Family House</a>
+                                    <a href="apartments.html">Family House</a>
                                 </div>
                             </div>
                             <div class="col-lg-2 col-md-4 col-sm-6">
                                 <div class="choose-property">
-                                    <a href="">Shop</a>
+                                    <a href="apartments.html">Shop</a>
                                 </div>
                             </div>
                             <div class="col-lg-2 col-md-4 col-sm-6">
                                 <div class="choose-property">
-                                    <a href="">Office</a>
+                                    <a href="apartments.html">Office</a>
                                 </div>
                             </div>
                             <div class="col-lg-2 col-md-4 col-sm-6">
                                 <div class="choose-property">
-                                    <a href="">Studio</a>
+                                    <a href="apartments.html">Studio</a>
                                 </div>
                             </div>
                         </div>
@@ -171,14 +277,14 @@
                     </div>
                     <div class="listings">
                         <h6>Apartment</h6>
-                        <h4><a href="">Big Apartment With Pool</a></h4>
+                        <h4><a href="property.html">Big Apartment With Pool</a></h4>
                         <p><i class="fa fa-map-marker"></i> Nee York, 35689 KR</p>
                         <ul>
                             <li>Beds: 5</li>
                             <li>Rooms: 6</li>
                             <li>Size: 150m2</li>
                         </ul>
-                        <a href="">View Detail</a>
+                        <a href="property.html">View Detail</a>
                     </div>
                 </div>
                 
@@ -189,14 +295,14 @@
                     </div>
                     <div class="listings">
                         <h6>Villa</h6>
-                        <h4><a href="">House with garage</a></h4>
-                        <p><i class="fa fa-map-marker"></i> Alabama, 45986 SN</p>
+                        <h4><a href="property.html">House with garage</a></h4>
+                        <p><i class="fa fa-map-marker"></i> Montgomery, 45986 SN</p>
                         <ul>
                             <li>Beds: 3</li>
                             <li>Rooms: 5</li>
                             <li>Size: 100m2</li>
                         </ul>
-                        <a href="">View Detail</a>
+                        <a href="property.html">View Detail</a>
                     </div>
                 </div>
                 
@@ -207,14 +313,14 @@
                     </div>
                     <div class="listings">
                         <h6>Studio</h6>
-                        <h4><a href="">Studio with pool</a></h4>
+                        <h4><a href="property.html">Studio with pool</a></h4>
                         <p><i class="fa fa-map-marker"></i> Chicago, 123546 ZG</p>
                         <ul>
                             <li>Beds: 2</li>
                             <li>Rooms: 3</li>
                             <li>Size: 80m2</li>
                         </ul>
-                        <a href="">View Detail</a>
+                        <a href="property.html">View Detail</a>
                     </div>
                 </div>
                 
@@ -225,14 +331,14 @@
                     </div>
                     <div class="listings">
                         <h6>Family House</h6>
-                        <h4><a href="">Comfortable spacious house</a></h4>
+                        <h4><a href="property.html">Comfortable spacious house</a></h4>
                         <p><i class="fa fa-map-marker"></i> Los Angeles, 789654 OT</p>
                         <ul>
                             <li>Beds: 6</li>
                             <li>Rooms: 7</li>
                             <li>Size: 160m2</li>
                         </ul>
-                        <a href="">View Detail</a>
+                        <a href="property.html">View Detail</a>
                     </div>
                 </div>
                 
@@ -297,7 +403,7 @@
                 
                 <div class="col-lg-3 col-md-6 col-sm-6 box-find">
                     <div class="img-find" style="background-image: url(images/house1.jpg);">
-                        <a href="">
+                        <a href="chicago.html">
                             <div class="bg-img-find">
                                 <h4>New York</h4>
                                 <p>3 Properties</p>
@@ -308,7 +414,7 @@
                 
                 <div class="col-lg-3 col-md-6 col-sm-6 box-find">
                     <div class="img-find" style="background-image: url(images/house2.jpg);">
-                        <a href="">
+                        <a href="chicago.html">
                             <div class="bg-img-find">
                                 <h4>Los Angeles</h4>
                                 <p>4 Properties</p>
@@ -319,7 +425,7 @@
                 
                 <div class="col-lg-3 col-md-6 col-sm-6 box-find">
                     <div class="img-find" style="background-image: url(images/house3.jpg);">
-                        <a href="">
+                        <a href="chicago.html">
                             <div class="bg-img-find">
                                 <h4>Chicago</h4>
                                 <p>6 Properties</p>
@@ -330,9 +436,9 @@
                 
                 <div class="col-lg-3 col-md-6 col-sm-6 box-find">
                     <div class="img-find" style="background-image: url(images/house4.jpg);">
-                        <a href="">
+                        <a href="chicago.html">
                             <div class="bg-img-find">
-                                <h4>Alabama</h4>
+                                <h4>Montgomery</h4>
                                 <p>10 Properties</p>
                             </div>
                         </a>       
@@ -341,7 +447,7 @@
                 
                 <div class="col-lg-3 col-md-6 col-sm-6 box-find">
                     <div class="img-find" style="background-image: url(images/house5.jpg);">
-                        <a href="">
+                        <a href="chicago.html">
                             <div class="bg-img-find">
                                 <h4>San Francisco</h4>
                                 <p>5 Properties</p>
@@ -352,7 +458,7 @@
                 
                 <div class="col-lg-3 col-md-6 col-sm-6 box-find">
                     <div class="img-find" style="background-image: url(images/house6.jpg);">
-                        <a href="">
+                        <a href="chicago.html">
                             <div class="bg-img-find">
                                 <h4>Boston</h4>
                                 <p>15 Properties</p>
@@ -363,7 +469,7 @@
                 
                 <div class="col-lg-3 col-md-6 col-sm-6 box-find">
                     <div class="img-find" style="background-image: url(images/house4.jpg);">
-                        <a href="">
+                        <a href="chicago.html">
                             <div class="bg-img-find">
                                 <h4>Detroit</h4>
                                 <p>10 Properties</p>
@@ -374,7 +480,7 @@
                 
                 <div class="col-lg-3 col-md-6 col-sm-6 box-find">
                     <div class="img-find" style="background-image: url(images/house2.jpg);">
-                        <a href="">
+                        <a href="chicago.html">
                             <div class="bg-img-find">
                                 <h4>Philadelphia</h4>
                                 <p>6 Properties</p>
@@ -424,9 +530,9 @@
                     <div class="img-home-blog" style="background-image: url(images/house3.jpg);"></div>
                     <div class="box-text-home-blog">
                         <h6>Villa</h6>
-                        <h4><a href="">Why choose this house ?</a></h4>
+                        <h4><a href="blog-post.html">Why choose this house ?</a></h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla id ante nec iaculis.</p>
-                        <a href="">View Post</a>
+                        <a href="blog-post.html">View Post</a>
                     </div>
                  </div>
                 
@@ -434,9 +540,9 @@
                     <div class="img-home-blog" style="background-image: url(images/house4.jpg);"></div>
                     <div class="box-text-home-blog">
                         <h6>Apartment</h6>
-                        <h4><a href="">Apartment, why ?</a></h4>
+                        <h4><a href="blog-post.html">Apartment, why ?</a></h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla id ante nec iaculis.</p>
-                        <a href="">View Post</a>
+                        <a href="blog-post.html">View Post</a>
                     </div>
                  </div>
                 
@@ -444,9 +550,9 @@
                     <div class="img-home-blog" style="background-image: url(images/house5.jpg);"></div>
                     <div class="box-text-home-blog">
                         <h6>Family House</h6>
-                        <h4><a href="">Big Family House ?</a></h4>
+                        <h4><a href="blog-post.html">Big Family House ?</a></h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla id ante nec iaculis.</p>
-                        <a href="">View Post</a>
+                        <a href="blog-post.html">View Post</a>
                     </div>
                  </div>
                 
@@ -454,9 +560,9 @@
                     <div class="img-home-blog" style="background-image: url(images/house6.jpg);"></div>
                     <div class="box-text-home-blog">
                         <h6>Studio</h6>
-                        <h4><a href="">Why choose studio ?</a></h4>
+                        <h4><a href="blog-post.html">Why choose studio ?</a></h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla id ante nec iaculis.</p>
-                        <a href="">View Post</a>
+                        <a href="blog-post.html">View Post</a>
                     </div>
                  </div>
 
@@ -499,7 +605,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="text-footer">
-                        <h5>Contact Us</h5>
+                        <h5>Follow Us</h5>
                         <div class="footer-soc">
                             <ul>
                                 <li><a href=""><i class="fa fa-facebook"></i></a></li>
@@ -520,7 +626,7 @@
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <div class="copy">
                         <p>© 2020 Real Estate. All rights reserved.</p>
-                        <p>Made by: <a href="">Darko-1993</a></p>
+                        <p>Made by: <a href="">Darko N.</a></p>
                     </div>
                 </div>
             </div>
